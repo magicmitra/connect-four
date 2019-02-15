@@ -1,0 +1,36 @@
+body{
+  background-color: var(--background-color);
+}
+#board {
+  display: grid;
+  grid-template-rows: repeat(6, 100px);
+  grid-template-columns: repeat(7, 100px);
+  width: 700px;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+}
+
+.slot {
+  background-color: var(--board-color);
+  padding: 10px;
+}
+
+.slot label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-color: white;
+  box-shadow: inset 2px 2px 3px 2px rgba(0,0,0,0.2);
+}
+
+.slot label.player1 {
+  background-color: var(--player1-color);
+}
+
+.slot label.player2 {
+  background-color: var(--player2-color);
+}
+
+.slot input[type=checkbox] {
+  display: none;
+}

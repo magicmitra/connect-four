@@ -1,0 +1,26 @@
+h1 {
+  color: var(--board-color);
+  font-size: 40px;
+  margin: 0;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  letter-spacing: 1px;
+  height: 0; /* essentially removes it from the flex */
+  position: absolute;
+  top: 40px;
+  transform: translateX(-30vw) rotate(-10deg);
+}
+
+h2#turn-indicator {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+}
+
+h2#turn-indicator #player-indicator.player1 {
+  color: var(--player1-color);
+}
+h2#turn-indicator #player-indicator.player2 {
+  color: var(--player2-color);
+}
